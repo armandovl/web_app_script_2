@@ -58,12 +58,12 @@
     
     function enviarSheet(){
     
-     var compilado={};
+     var compilado={}; //variable que compila la informacion de varias variables
     
-      compilado.nombreUno= document.getElementById("name").value;
+      compilado.nombreUno= document.getElementById("name").value; //ya nada mas se descomponer
       compilado.nombreDos= document.getElementById("name2").value;
 
-      google.script.run.hacerClick(compilado);
+      google.script.run.hacerClick(compilado);  // *esta linea ejecuta funciones del .gs el nombre1 pasa como argumento
       
       document.getElementById("name").value="limpio";
       document.getElementById("name2").value="limpio";
